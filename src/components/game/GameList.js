@@ -9,6 +9,7 @@ export const GameList = (props) => {
   }, []);
 
   return (
+    
     <article className="games">
       {games.map((game) => {
         return (
