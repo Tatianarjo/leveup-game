@@ -16,11 +16,11 @@ export const GameProvider = (props) => {
       .then(setGames);
   };
   const createGame = (game) => {
-    return fetch("", {}).then().then();
+    return fetch("http://localhost:8000/games", {}).then().then();
   };
   
   const getGameTypes = () => {
-    return fetch("", {}).then().then();
+    return fetch("http://localhost:8000/gameTypes", {}).then().then();
   };
   return (
     <GameContext.Provider value={{ games, getGames, createGame, getGameTypes  }}>
